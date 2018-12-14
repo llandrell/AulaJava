@@ -13,6 +13,14 @@ public class Endereco {
     private String numero;
     private String bairro;
     private Cliente cliente;
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
     
 
     @Override

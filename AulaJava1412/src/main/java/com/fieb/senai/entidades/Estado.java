@@ -15,6 +15,14 @@ public class Estado {
    
    Set<Integer> cidades = new HashSet<>(); 
 
+    public Set<Integer> getCidades() {
+        return cidades;
+    }
+
+    public void setCidades(Set<Integer> cidades) {
+        this.cidades = cidades;
+    }
+
     public Estado(String nome) {
         this.nome = nome;
     }

@@ -6,7 +6,9 @@
 package com.fieb.senai.entidades;
 
 import static java.lang.reflect.Array.set;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 import static java.util.Objects.hashCode;
 import java.util.Set;
@@ -19,7 +21,28 @@ public class Cliente {
     private Endereco endereco;
     
 
-    private Set<String> telefones = new HashSet<>();
+    private List<String> telefones = new ArrayList<>();
+
+    public Cliente(Integer matricula, Integer idade) {
+        this.matricula = matricula;
+        this.idade = idade;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public List<String> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(List<String> telefones) {
+        this.telefones = telefones;
+    }
     
         
     
