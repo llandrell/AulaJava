@@ -7,6 +7,7 @@ package com.fieb.senai.entidades;
 
 import static java.lang.reflect.Array.set;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -37,7 +38,7 @@ public class Cliente {
     }
 
     public List<String> getTelefones() {
-        return telefones;
+        return Collections.unmodifiableList(telefones);
     }
 
     public void setTelefones(List<String> telefones) {
@@ -79,19 +80,12 @@ public class Cliente {
         return true;
     }
 
-    
-    
-    
-    
     public Cliente(String nome, Integer matricula, Integer idade) {
         this.nome = nome;
         this.matricula = matricula;
         this.idade = idade;
     }
 
-    
-    
-    
     public String getNome() {
         return nome;
     }
