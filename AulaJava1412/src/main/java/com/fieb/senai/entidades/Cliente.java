@@ -7,6 +7,7 @@ package com.fieb.senai.entidades;
 
 import static java.lang.reflect.Array.set;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
@@ -41,8 +42,8 @@ public class Cliente {
         return Collections.unmodifiableList(telefones);
     }
 
-    public void setTelefones(List<String> telefones) {
-        this.telefones = telefones;
+    public void setTelefones(String... telefones) {
+        this.telefones.addAll(Arrays.asList (telefones));
     }
     
         
